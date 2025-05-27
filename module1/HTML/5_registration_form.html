@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Register</title>
+    <style>
+        form {
+            border: 1px solid #ccc;
+            padding: 15px;
+            width: 300px;
+        }
+    </style>
+</head>
+<body>
+    <form onsubmit="document.getElementById('confirmation').value='Form submitted!'; return false;">
+        <input type="text" placeholder="Name" required autofocus><br>
+        <input type="email" placeholder="Email" required><br>
+        <input type="date" required><br>
+        <select required>
+            <option value="">Select Event Type</option>
+            <option value="music">Music</option>
+            <option value="sports">Sports</option>
+        </select><br>
+        <textarea placeholder="Your message"></textarea><br>
+        <input type="submit" value="Register"><br>
+        <output id="confirmation"></output>
+    </form>
+</body>
+</html>

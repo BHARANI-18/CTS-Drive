@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Feedback</title>
+  <script>
+    function validatePhone(el) {
+      const msg = /^\d{10}$/.test(el.value) ? "Valid" : "Invalid";
+      document.getElementById('phoneMsg').textContent = msg;
+    }
+
+    function showFee(el) {
+      document.getElementById('feeDisplay').textContent = "Fee: $" + (el.value === "music" ? "10" : "20");
+    }
+
+    function enlargeImage(el) {
+      el.style.width = "300px";
+    }
+
+    function countChars(el) {
+      document.getElementById('charCount').textContent = el.value.length + " characters";
+    }
+  </script>
+</head>
+<body>
+  <input type="text" placeholder="Phone" onblur="validatePhone(this)">
+  <span id="phoneMsg"></span><br>
+
+  <select onchange="showFee(this)">
+    <option value="">Select Event</option>
+    <option value="music">Music</option>
+    <option value="sports">Sports</option>
+  </select>
+  <div id="feeDisplay"></div><br>
+
+  <button onclick="alert('Submitted!')">Submit</button><br>
+
+  <img src="thumb.jpg" ondblclick="enlargeImage(this)" width="150"><br>
+
+  <textarea onkeyup="countChars(this)"></textarea>
+  <div id="charCount">0 characters</div>
+</body>
+</html>
