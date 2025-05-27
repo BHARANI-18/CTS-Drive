@@ -1,0 +1,11 @@
+/* Q5: Typography */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+body {
+  font-family: 'Roboto', sans-serif;
+}
+.description {
+  font-size: 16px;
+  text-align: justify;
+  line-height: 1.6;
+  letter-spacing: 0.5px;
+}

@@ -1,0 +1,9 @@
+/* Q10: Responsive Design */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+  }
+  body {
+    font-size: 14px;
+  }
+}

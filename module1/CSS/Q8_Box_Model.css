@@ -1,0 +1,15 @@
+/* Q8: Box Model */
+.eventCard {
+  border: 1px solid #000;
+  padding: 15px;
+  margin: 20px;
+}
+input:focus {
+  outline: 2px solid blue;
+}
+.hidden {
+  visibility: hidden;
+}
+.removed {
+  display: none;
+}
